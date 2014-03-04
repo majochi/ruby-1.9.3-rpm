@@ -1,4 +1,6 @@
-yum install -y rpm-build rpmdevtools libyaml-devel
+yum install -y rpm-build rpmdevtools libyaml-devel \
+	ncurses-devel gdbm-devel tcl-devel db4-devel \
+    byacc
 rpmdev-setuptree
 cd ~/rpmbuild/SOURCES
 curl -O http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p0.tar.gz
