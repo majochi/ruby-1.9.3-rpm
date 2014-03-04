@@ -1,3 +1,4 @@
+cd
 yum install -y rpm-build rpmdevtools libyaml-devel \
 	ncurses-devel gdbm-devel tcl-devel db4-devel \
     byacc
