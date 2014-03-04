@@ -9,4 +9,5 @@ cd ~/rpmbuild/SPECS
 curl https://raw.github.com/lnxchk/ruby-1.9.3-rpm/master/ruby193.spec > ruby193.spec
 rpmbuild -bb ruby193.spec
 ARCH=$(uname -i)
-rpm -Uvh ~/rpmbuild/RPMS/$ARCH/ruby-1.9.3p0-2.$ARCH.rpm
+yum erase -y ruby ruby-devel
+rpm -i ~/rpmbuild/RPMS/$ARCH/ruby-1.9.3p0-2.$ARCH.rpm
